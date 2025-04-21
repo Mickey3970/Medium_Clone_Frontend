@@ -1,0 +1,154 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f5f5f5; /* Light beige background */
+  color: #333; /* Softer text color */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd; /* Thin line under navbar */
+}
+
+.navbar img {
+  width: 150px; /* Adjust logo size */
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+nav > ul > li {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li button {
+  text-transform: lowercase;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  text-align: left;
+}
+
+.hero-section > .text {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.hero-section > .text > p:first-child {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 1.2;
+  color: #222;
+}
+
+.hero-section > .text > p:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hero-section > .text > button {
+  text-transform: lowercase;
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hero-section > .background > img {
+  flex: 1;
+  max-width: 600px;
+  height: auto;
+  margin-left: 50px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 50px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  gap: 15px;
+}
+
+.footer-links > li {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-section > .text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero-section > .background > img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
