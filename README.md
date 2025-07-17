@@ -1,4 +1,4 @@
-# 📰 Medium Clone (Frontend Only)
+# Medium Clone (Frontend Only)
 
 A responsive and pixel-perfect frontend clone of [Medium.com](https://medium.com), built using only **HTML** and **CSS**.  
 This project focuses on replicating the **layout**, **typography**, and **UI components** of the Medium homepage, without any JavaScript or backend functionality.
